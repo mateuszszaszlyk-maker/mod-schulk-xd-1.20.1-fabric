@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "sculkxpcontrol",
+  "version": "${version}",
+  "name": "Sculk XP Control",
+  "description": "Pozwala zmieniać ilość doświadczenia (XP) wypadającego po zniszczeniu bloków sculk. Konfiguracja komendą /sculkxp z poziomu gry.",
+  "authors": ["Ty"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.sculkxpcontrol.SculkXpControl"]
+  },
+  "mixins": ["sculkxpcontrol.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
